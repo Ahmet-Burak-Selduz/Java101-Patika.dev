@@ -6,7 +6,7 @@ public class Main {
         System.out.print("Basamak Sayısını Girin : ");
         int s = input.nextInt();
         for (int i = s; i > 0; i--){
-            for (int j = 1; j <= ((s * 2 - 1) - (i * 2 - 1)) / 2; j++){
+            for (int j = 1; j <= s - i; j++){
                 System.out.print(" ");
             }
             for (int k = 1; k <= i * 2 - 1; k++){
