@@ -116,6 +116,18 @@ public class Main {
         System.out.println("Sonuç :" + result);
     }
 
+    static void rectangle(){
+        int k1, k2, cevre, alan;
+        Scanner scan = new Scanner(System.in);
+        System.out.print("1. Kenarı girin :");
+        k1 = scan.nextInt();
+        System.out.print("2. Kenarı girin :");
+        k2 = scan.nextInt();
+        cevre = (k1 + k2) * 2;
+        alan = k1 * k2;
+        System.out.println("Çevresi = "+cevre + "\nAlanı = "+alan);
+    }
+
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int select;
@@ -126,6 +138,7 @@ public class Main {
                 + "5- Üslü Sayı Hesaplama\n"
                 + "6- Faktoriyel Hesaplama\n"
                 + "7- Mod Alma\n"
+                + "8- Dikdörtgen Hesaplama\n"
                 + "0- Çıkış Yap";
 
         do {
@@ -154,6 +167,9 @@ public class Main {
                     break;
                 case 7:
                     mod();
+                    break;
+                case 8:
+                    rectangle();
                     break;
                 default:
                     System.out.println("Yanlış bir değer girdiniz, tekrar deneyiniz.");
